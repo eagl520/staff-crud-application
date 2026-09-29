@@ -7,7 +7,6 @@ function ProtectedRoute({ children }) {
   const API_URL = "https://employees-dashboard.infinityfreeapp.com/Backend";
 
   useEffect(() => {
-
     fetch(`${API_URL}/check_session.php`, {
       method: "GET",
       credentials: "include"
